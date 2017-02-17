@@ -2,39 +2,36 @@
 <html>
 <head>
 	<title>Vikash kumar</title>
+	<script>
+		function cal(n1) {
+			calculate.text1.value = calculate.text1.value + n1;
+		}
+	</script>
 </head>
 <body>
 
-<div id="calc-cantain">
-	<form name="calculator" >
-		<input type="text" name="answer" />
-		<br/>
-		<button class="btn">1</button>
-		<br>
-		<button class="btn">2</button>
-		<br>
-		<button class="btn"></button>
-		<br>
-		<button class="btn"></button>
-		<br>
-		<button class="btn"></button>
-		<br>
-		<button class="btn"></button>
-		<br>
-		<button class="btn"></button>
-		<br>
-		<button class="btn"></button>
-		<br>
-		<button class="btn"></button>
-		<br>
-		<button class="btn"></button>
-		<br>	
-	</form>
+<form name="calculate">
+	<input type="text" name="text1" style="text-align: right;"><br/>
+	<input type="button" name="b9" value="9" onclick="cal(b9.value);">
+	<input type="button" name="b8" value="8" onclick="cal(b8.value);">
+	<input type="button" name="b7" value="7" onclick="cal(b7.value);">
+	<input type="button" name="add" value="+" onclick="cal(add.value);"><br/>
+	<input type="button" name="b6" value="6" onclick="cal(b6.value);">
+	<input type="button" name="b5" value="5" onclick="cal(b5.value);">
+	<input type="button" name="b4" value="4" onclick="cal(b4.value);">
+	<input type="button" name="sub" value="-" onclick="cal(sub.value);"><br />
+	<input type="button" name="b3" value="3" onclick="cal(b3.value);">
+	<input type="button" name="b2" value="2" onclick="cal(b2.value);">
+	<input type="button" name="b1" value="1" onclick="cal(b1.value);">
+	<input type="button" name="mul" value="*" onclick="cal(mul.value);"><br />
+	<input type="button" name="b0" value="0" onclick="cal(b0.value);">
+	<input type="button" name="dot" value="." onclick="cal(dot.value);">
+	<input type="button" name="equal" value="=" onclick="text1.value = eval(text1.value);">
+	<input type="button" name="div" value="/" onclick="cal(div.value);"><br/>
 	
-	<script src="app.js"></script>
+</form>
 
 
-</div>
 
 
 
