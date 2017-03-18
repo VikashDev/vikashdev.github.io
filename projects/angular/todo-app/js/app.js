@@ -29,6 +29,8 @@ todoApp.filter("checkedItems", () => {
 // Created a controller which bind the html block
 todoApp.controller('ToDoCtrl', function($scope) {
     $scope.todo = model;
+
+    
     $scope.incompleteCount = function () {
     	var count = 0;
     	angular.forEach($scope.todo.items, function(item) {
